@@ -1,0 +1,87 @@
+body{
+	background-color: black;
+	color: aliceblue;
+	font-family: tw cen mt;
+	font-size: 30px;
+	padding: 0;
+
+}
+
+.glitch{
+	position: relative;
+	width: 50%;
+	height: 50vh;
+	background: url(broke.png);
+	background-size: cover;
+	border-radius: 10px;
+}
+.glitch:hover{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(broke.png);
+	background-size: cover;
+	border-radius: 10px;
+	opacity: 0.5;
+}
+.glitch:active:hover{
+	animation: animate 0.15s infinite;
+
+}
+
+@keyframes animate{
+	0% {
+		background-position: 0 0;
+		filter: hue-rotate(0deg);
+	}
+	10% {
+		background-position: 4px 0;
+		filter: hue-rotate(40deg);
+		filter: contrast(110%);
+	}
+	20% {
+		background-position: -4px 0;
+		filter: hue-rotate(80deg);
+		filter: contrast(1120%);
+	}
+	30% {
+		background-position: 12px 0;
+		filter: hue-rotate(120deg);
+		filter: contrast(130%);
+	}
+	40% {
+		background-position: -16px 0;
+		filter: hue-rotate(160deg);
+		filter: contrast(140%);
+	}
+	50% {
+		background-position: -24px 0;
+		filter: hue-rotate(200deg);
+		filter: contrast(150%);
+	}
+	60% {
+		background-position: -52px 0;
+		filter: hue-rotate(240deg);
+		filter: contrast(160%);
+	}
+	70% {
+		background-position: 0 22px;
+		filter: hue-rotate(280deg);
+		filter: contrast(170%);
+	}
+	80% {
+		background-position: -40px -10px;
+		filter: hue-rotate(320deg);
+		filter: contrast(180%);
+
+	}
+	100% {
+		background-position: 0 4px;
+		filter: hue-rotate(360deg);
+		filter: contrast(200%);
+	}
+
+}
